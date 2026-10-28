@@ -1,3 +1,0 @@
-Vanty School - Evaluación final de Desarrollo Web
-https://vanty-school-evaluacion-web.elatedcurry19.chatgpt.site
-Acceso público sin cuenta. Código del sitio: dist/index.html
