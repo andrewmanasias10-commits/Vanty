@@ -1,16 +1,3 @@
-/* VANTY SCHOOL
-   Bootstrap 5.3.8 se carga primero y resuelve la rejilla, los componentes
-   y las utilidades. Este archivo reúne únicamente las fuentes, la identidad
-   visual, las animaciones y las excepciones de accesibilidad.
-
-   ÍNDICE
-   1. Fuentes locales oficiales de Google Fonts
-   2. Variables de marca y tipografía
-   3. Identidad visual de las secciones
-   4. Cinco animaciones y clases de interacción
-   5. Accesibilidad y ajustes de pantalla
-*/
-
 /* 1. FUENTES: cada regla corresponde a un grosor diferente. */
 @font-face {
   font-family: "Plus Jakarta Sans";
