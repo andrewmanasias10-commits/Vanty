@@ -16,7 +16,7 @@
       type="image/webp"
     />
     <!-- Hoja única: importa Bootstrap y añade las fuentes y la marca de Vanty. -->
-    <link href="assets/css/styles.css?v=5" rel="stylesheet" />
+    <link href="assets/css/styles.css?v=6" rel="stylesheet" />
     <script defer="" src="assets/vendor/bootstrap.bundle.min.js"></script>
     <script defer="" src="assets/js/main.js?v=4"></script>
   </head>
@@ -78,7 +78,11 @@
     </header>
     <main id="contenido" tabindex="-1">
       <!-- PORTADA Y GALERÍA: botones, Card y Tabs -->
-      <section aria-labelledby="titulo-inicio" class="hero" id="inicio">
+      <section
+        aria-labelledby="titulo-inicio"
+        class="hero bg-primary-subtle"
+        id="inicio"
+      >
         <div class="container text-center hero-content anim-entrada">
           <h1 id="titulo-inicio">Vanty <span>School</span></h1>
           <p>
@@ -414,9 +418,7 @@
                   El docente también crea repasos para su curso
                 </li>
               </ul>
-              <aside
-                class="alert alert-primary text-bg-dark border-0 rounded-4 mb-0 small"
-              >
+              <aside class="alert alert-primary border-0 rounded-4 mb-0 small">
                 ARIA avisa que puede equivocarse y sugiere consultar al
                 profesor.
               </aside>
@@ -464,9 +466,7 @@
                 <li class="my-2">Ciclo de mejora compartido</li>
                 <li class="my-2">El docente ve sus propios resultados</li>
               </ul>
-              <aside
-                class="alert alert-primary text-bg-dark border-0 rounded-4 mb-0 small"
-              >
+              <aside class="alert alert-primary border-0 rounded-4 mb-0 small">
                 Los resultados se agrupan para cuidar el anonimato. ARIA no
                 sugiere sanciones.
               </aside>
@@ -518,9 +518,7 @@
                   La comunicación conecta a familias y colegio
                 </li>
               </ul>
-              <aside
-                class="alert alert-primary text-bg-dark border-0 rounded-4 mb-0 small"
-              >
+              <aside class="alert alert-primary border-0 rounded-4 mb-0 small">
                 ARIA nunca emite diagnósticos. El acompañamiento corresponde a
                 las personas.
               </aside>
@@ -559,13 +557,15 @@
       <!-- ARIA: Grid responsive y Cards de Bootstrap -->
       <section aria-labelledby="titulo-aria" class="aria-section" id="aria">
         <div class="container-fluid aria-shell">
-          <div class="aria-panel anim-aparecer rounded-5 p-4 p-lg-5 shadow-lg">
+          <div
+            class="aria-panel anim-aparecer rounded-5 p-4 p-lg-5 shadow-lg text-bg-primary"
+          >
             <div class="row align-items-center g-4">
               <div class="col-lg-8">
                 <h2 id="titulo-aria">
                   ARIA trabaja dentro del flujo de cada persona
                 </h2>
-                <p class="lead fw-normal">
+                <p class="lead fw-normal text-white">
                   Aparece donde hace falta, con lo que ese rol puede ver, y
                   siempre deja la decisión en manos de las personas.
                 </p>
@@ -583,62 +583,72 @@
             </div>
             <div class="row row-cols-1 row-cols-sm-2 row-cols-xl-5 g-3 mt-4">
               <div class="col">
-                <article class="card aria-card anim-card h-100 rounded-4">
+                <article
+                  class="card aria-card anim-card h-100 rounded-4 bg-dark bg-opacity-10 border-light border-opacity-25 text-white"
+                >
                   <div class="card-body p-3 p-lg-4">
                     <span class="small d-block mb-2">Para estudiantes</span>
                     <h3 class="card-title h5 fw-semibold">Repaso de clases</h3>
-                    <p class="card-text small mb-0">
+                    <p class="card-text small mb-0 text-white">
                       Misiones para practicar lo visto en clases.
                     </p>
                   </div>
                 </article>
               </div>
               <div class="col">
-                <article class="card aria-card anim-card h-100 rounded-4">
+                <article
+                  class="card aria-card anim-card h-100 rounded-4 bg-dark bg-opacity-10 border-light border-opacity-25 text-white"
+                >
                   <div class="card-body p-3 p-lg-4">
                     <span class="small d-block mb-2">Para docentes</span>
                     <h3 class="card-title h5 fw-semibold">ARIA Pedagógica</h3>
-                    <p class="card-text small mb-0">
+                    <p class="card-text small mb-0 text-white">
                       Ideas para planificar y reforzar, a partir de sus cursos.
                     </p>
                   </div>
                 </article>
               </div>
               <div class="col">
-                <article class="card aria-card anim-card h-100 rounded-4">
+                <article
+                  class="card aria-card anim-card h-100 rounded-4 bg-dark bg-opacity-10 border-light border-opacity-25 text-white"
+                >
                   <div class="card-body p-3 p-lg-4">
                     <span class="small d-block mb-2">Para apoderados</span>
                     <h3 class="card-title h5 fw-semibold">ARIA Familias</h3>
-                    <p class="card-text small mb-0">
+                    <p class="card-text small mb-0 text-white">
                       Orientación para acompañar desde la casa.
                     </p>
                   </div>
                 </article>
               </div>
               <div class="col">
-                <article class="card aria-card anim-card h-100 rounded-4">
+                <article
+                  class="card aria-card anim-card h-100 rounded-4 bg-dark bg-opacity-10 border-light border-opacity-25 text-white"
+                >
                   <div class="card-body p-3 p-lg-4">
                     <span class="small d-block mb-2">Para bienestar</span>
                     <h3 class="card-title h5 fw-semibold">ARIA Bienestar</h3>
-                    <p class="card-text small mb-0">
+                    <p class="card-text small mb-0 text-white">
                       Apoyo para ordenar casos y seguimientos.
                     </p>
                   </div>
                 </article>
               </div>
               <div class="col">
-                <article class="card aria-card anim-card h-100 rounded-4">
+                <article
+                  class="card aria-card anim-card h-100 rounded-4 bg-dark bg-opacity-10 border-light border-opacity-25 text-white"
+                >
                   <div class="card-body p-3 p-lg-4">
                     <span class="small d-block mb-2">Para dirección</span>
                     <h3 class="card-title h5 fw-semibold">ARIA Gestión</h3>
-                    <p class="card-text small mb-0">
+                    <p class="card-text small mb-0 text-white">
                       Lectura del colegio completo para decidir.
                     </p>
                   </div>
                 </article>
               </div>
             </div>
-            <p class="small mb-0 mt-4">
+            <p class="small mb-0 mt-4 text-white">
               ARIA puede equivocarse. No emite diagnósticos ni sugiere
               sanciones; las decisiones siempre son humanas.
             </p>
@@ -994,13 +1004,13 @@
       <section aria-labelledby="titulo-cierre" class="pb-5 px-3">
         <div class="container">
           <div
-            class="closing-panel anim-aparecer rounded-5 p-4 p-md-5 text-center"
+            class="closing-panel anim-aparecer rounded-5 p-4 p-md-5 text-center text-bg-dark"
           >
             <h2 id="titulo-cierre">
               Toda la comunidad educativa,<br class="d-none d-md-inline" />
               conectada en cada avance.
             </h2>
-            <p>
+            <p class="text-white">
               Una mirada compartida al aprendizaje, la participación y el
               bienestar escolar.
             </p>
@@ -1013,7 +1023,7 @@
         </div>
       </section>
     </main>
-    <footer class="border-top py-4">
+    <footer class="border-top py-4 bg-body-tertiary">
       <div class="container">
         <div
           class="d-flex flex-wrap align-items-center justify-content-between gap-3 mb-3"

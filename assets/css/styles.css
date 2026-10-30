@@ -72,6 +72,11 @@
   --bs-body-bg: var(--surface);
   --bs-border-color: #dce7f3;
   --bs-primary: var(--brand);
+  /* La paleta de Vanty se aplica a las utilidades nativas de Bootstrap. */
+  --bs-primary-rgb: 0, 105, 219;
+  --bs-primary-bg-subtle: #e9f4ff;
+  --bs-primary-text-emphasis: #004c9e;
+  --bs-primary-border-subtle: #bbd8f7;
 }
 
 html {
@@ -276,18 +281,16 @@ header.sticky-top {
   padding: 0;
 }
 .aria-panel {
-  color: white;
-  background:
-    radial-gradient(ellipse at 90% 0%, #81dbff1a, transparent 60%),
-    linear-gradient(115deg, #005ba8, #0047ab);
+  /* text-bg-primary aporta el fondo; aquí solo se añade el brillo de marca. */
+  background-image: radial-gradient(
+    ellipse at 90% 0%,
+    #81dbff1a,
+    transparent 60%
+  );
 }
 .aria-panel h2 {
   max-width: 47rem;
   font-size: clamp(2.2rem, 4.5vw, 4rem);
-}
-.aria-panel p,
-.aria-card {
-  color: white;
 }
 .aria-panel .lead {
   max-width: 42rem;
@@ -299,10 +302,6 @@ header.sticky-top {
   max-width: 260px;
   max-height: 300px;
   object-fit: contain;
-}
-.aria-card {
-  --bs-card-bg: #ffffff14;
-  --bs-card-border-color: #ffffff38;
 }
 .aria-card h3 {
   font-size: 1.15rem;
@@ -393,10 +392,12 @@ header.sticky-top {
   line-height: 1.8;
 }
 .closing-panel {
-  color: white;
-  background:
-    radial-gradient(ellipse at 5% 5%, #01abfc45, transparent 65%),
-    linear-gradient(125deg, #0b1b3a, #09316e);
+  /* text-bg-dark controla el fondo y el texto de este apartado. */
+  background-image: radial-gradient(
+    ellipse at 5% 5%,
+    #01abfc45,
+    transparent 65%
+  );
 }
 .closing-panel h2 {
   max-width: 58rem;
@@ -405,7 +406,6 @@ header.sticky-top {
 .closing-panel p {
   max-width: 40rem;
   margin: 1.5rem auto 2rem;
-  color: #e2eaf6;
 }
 footer p {
   font-size: 0.8rem;
