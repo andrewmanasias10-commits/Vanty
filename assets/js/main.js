@@ -1,6 +1,5 @@
 "use strict";
 
-// Solo preferencias de lectura. Sin cuentas, API ni datos de estudiantes.
 const root = document.documentElement;
 const size = document.getElementById("tamano-texto");
 const motion = document.getElementById("reducir-movimiento");
@@ -14,9 +13,7 @@ try {
   if (saved && ["normal", "large", "larger"].includes(saved.size)) {
     settings = { size: saved.size, reduced: saved.reduced === true };
   }
-} catch {
-  /* La web funciona también con almacenamiento bloqueado. */
-}
+} catch {}
 
 function applySettings(announce = false) {
   root.dataset.textSize = settings.size;
@@ -25,9 +22,7 @@ function applySettings(announce = false) {
   motion.checked = settings.reduced;
   try {
     localStorage.setItem("vanty-accessibility", JSON.stringify(settings));
-  } catch {
-    /* Preferencia válida durante esta visita. */
-  }
+  } catch {}
   if (announce) status.textContent = "Preferencias de lectura actualizadas.";
 }
 applySettings();
@@ -45,7 +40,6 @@ document.getElementById("restablecer").addEventListener("click", () => {
   status.textContent = "Se restablecieron los ajustes de lectura.";
 });
 
-// La navegación móvil se cierra al elegir una sección.
 const menu = document.getElementById("menu");
 menu.querySelectorAll('a[href^="#"]').forEach((link) =>
   link.addEventListener("click", () => {
@@ -58,7 +52,6 @@ menu.querySelectorAll('a[href^="#"]').forEach((link) =>
   }),
 );
 
-// Bootstrap gestiona Escape, el foco atrapado y su devolución al disparador.
 const modalElement = document.getElementById("imagen-modal");
 const previewImage = document.getElementById("imagen-ampliada");
 document.querySelectorAll("[data-preview]").forEach((button) => {
@@ -78,7 +71,6 @@ document.querySelectorAll("[data-preview]").forEach((button) => {
   });
 });
 
-// Los videos permanecen bajo control del visitante: sin audio automático.
 const demoVideo = document.getElementById("video-demo");
 if (demoVideo) {
   const player = demoVideo.parentElement;
@@ -106,7 +98,6 @@ if (demoVideo) {
   });
 }
 
-// El contenido siempre empieza visible; la mejora de movimiento es opcional.
 if ("IntersectionObserver" in window) {
   const observer = new IntersectionObserver(
     (entries) => {
