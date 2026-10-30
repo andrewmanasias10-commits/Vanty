@@ -1,3 +1,5 @@
+@import url("../vendor/bootstrap.min.css");
+
 /* 1. FUENTES: cada regla corresponde a un grosor diferente. */
 @font-face {
   font-family: "Plus Jakarta Sans";
